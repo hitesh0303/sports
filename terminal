@@ -1,0 +1,17 @@
+# Create frontend
+npm create vite@latest frontend -- --template react
+cd frontend
+npm install
+
+# Required frontend dependencies
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
+npm install react-router-dom axios formik yup react-pdf
+npm install @react-pdf-viewer/core @react-pdf-viewer/default-layout
+npm install jwt-decode moment
+
+# Create backend
+mkdir backend
+cd backend
+npm init -y
+npm install express mongoose dotenv bcryptjs jsonwebtoken cors
+npm install nodemon --save-dev 
